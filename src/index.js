@@ -1,6 +1,8 @@
+// src/index.js
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Home from "./pages/Home";
+import { RouterProvider } from "react-router-dom";
+import router from "./routes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Home />);
+root.render(<RouterProvider router={router} />);
